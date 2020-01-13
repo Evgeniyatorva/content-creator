@@ -1,3 +1,9 @@
-import searchImage from './searchImage';
+import { combineReducers } from 'redux';
 
-export default searchImage
+import searchImage from './searchImage';
+import getQuotes from './quotes';
+
+export default combineReducers({
+  searchImage,
+  getQuotes
+}) 
